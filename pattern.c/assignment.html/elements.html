@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Showcase</title>
+</head>
+<body>
+
+
+  <h1>HTML Elements Showcase - Inline vs Block</h1>
+  <p>
+    In HTML, elements are broadly divided into two categories: 
+    <b>block-level</b> and <b>inline</b>.  
+    Block elements take up the full width and always start on a new line,  
+    while inline elements only take as much space as needed and sit within a line of text.
+  </p>
+
+ 
+  <p>
+    <a href="#block">[Block Elements]</a>  
+    <a href="#inline">[Inline Elements]</a>  
+    <a href="#comparison">[Comparison]</a>
+  </p>
+
+  <h2 id="block">Block Elements</h2>
+
+  <h3>1. &lt;div&gt;</h3>
+  <div style="border:1px solid gray; padding:5px;">This is inside a &lt;div&gt;</div>
+  <p>Div is a block container used to group content.</p>
+
+  <h3>2. &lt;p&gt;</h3>
+  <p>This is a paragraph example.</p>
+  <p>The &lt;p&gt; tag defines a block of text that always starts on a new line.</p>
+
+  <h3>3. &lt;h1&gt;-&lt;h6&gt;</h3>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Headings are block-level elements that take the full width.</p>
+
+  <h3>4. &lt;ul&gt; and &lt;ol&gt;</h3>
+  <ul><li>Unordered item 1</li><li>Unordered item 2</li></ul>
+  <ol><li>Ordered item 1</li><li>Ordered item 2</li></ol>
+  <p>Lists are block-level containers for items.</p>
+
+  <h3>5. &lt;blockquote&gt;</h3>
+  <blockquote>“Coding is the new literacy.”</blockquote>
+  <p>Blockquote is a block container for quotations.</p>
+
+  <h3>6. &lt;hr&gt;</h3>
+  <p>Before horizontal line</p>
+  <hr>
+  <p>After horizontal line</p>
+  <p>&lt;hr&gt; draws a thematic break.</p>
+
+  <h3>7. &lt;table&gt;</h3>
+  <table border="1" cellpadding="5">
+    <tr><th>Col 1</th><th>Col 2</th></tr>
+    <tr><td>A</td><td>B</td></tr>
+  </table>
+  <p>Table is a block-level structure for tabular data.</p>
+
+  <h3>8. &lt;section&gt;</h3>
+  <section style="border:1px dashed blue; padding:5px;">This is a section block.</section>
+  <p>Section groups content into thematic blocks.</p>
+
+  <h3>9. &lt;article&gt;</h3>
+  <article style="border:1px dashed green; padding:5px;">
+    <h4>Article Title</h4>
+    <p>This is an independent article block.</p>
+  </article>
+  <p>Article represents independent content.</p>
+
+  <h3>10. &lt;nav&gt;</h3>
+  <nav style="background:#eee; padding:5px;">
+    <a href="#">Home</a> | <a href="#">About</a>
+  </nav>
+  <p>Nav defines a block of navigation links.</p>
+
+  <h2 id="inline">Inline Elements</h2>
+
+  <h3>1. &lt;span&gt;</h3>
+  <p>This is <span style="color:red;">highlighted with span</span> inside text.</p>
+  <p>Span is an inline container with no new line.</p>
+
+  <h3>2. &lt;a&gt;</h3>
+  <p>Visit <a href="https://www.example.com" target="_blank">Example</a> site.</p>
+  <p>Anchor creates hyperlinks and stays inline.</p>
+
+  <h3>3. &lt;b&gt;</h3>
+  <p>This word is <b>bold</b> inside a sentence.</p>
+  <p>B makes text bold but with no semantic meaning.</p>
+
+  <h3>4. &lt;i&gt;</h3>
+  <p>This word is <i>italic</i> inline.</p>
+  <p>I makes text italic for style.</p>
+
+  <h3>5. &lt;u&gt;</h3>
+  <p>This is <u>underlined</u> text.</p>
+  <p>U tag adds underline inline.</p>
+
+  <h3>6. &lt;strong&gt;</h3>
+  <p>Warning: <strong>Do not share password</strong>.</p>
+  <p>Strong represents strong importance.</p>
+
+  <h3>7. &lt;em&gt;</h3>
+  <p>This word is <em>emphasized</em>.</p>
+  <p>Em adds emphasis, usually italics.</p>
+
+  <h3>8. &lt;sup&gt; and &lt;sub&gt;</h3>
+  <p>E = mc<sup>2</sup> and H<sub>2</sub>O.</p>
+  <p>Sup shows superscript, sub shows subscript.</p>
+
+  <h3>9. &lt;mark&gt;</h3>
+  <p>This is <mark>highlighted</mark> text.</p>
+  <p>Mark highlights text inline.</p>
+
+  <h3>10. &lt;abbr&gt;</h3>
+  <p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language.</p>
+  <p>Abbr defines an abbreviation with a tooltip.</p>
+
+  <h3>11. &lt;code&gt;</h3>
+  <p>Use <code>console.log("Hello")</code> in JavaScript.</p>
+  <p>Code represents inline code snippets.</p>
+
+  <h2 id="comparison">Inline vs Block Comparison</h2>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption>Differences Between Inline and Block Elements</caption>
+    <tr>
+      <th>Block Elements</th>
+      <th>Inline Elements</th>
+    </tr>
+    <tr><td>&lt;div&gt;</td><td>&lt;span&gt;</td></tr>
+    <tr><td>&lt;p&gt;</td><td>&lt;a&gt;</td></tr>
+    <tr><td>&lt;h1&gt;</td><td>&lt;b&gt;</td></tr>
+    <tr><td>&lt;ul&gt;</td><td>&lt;i&gt;</td></tr>
+    <tr><td>&lt;blockquote&gt;</td><td>&lt;abbr&gt;</td></tr>
+    <tr><td>&lt;table&gt;</td><td>&lt;code&gt;</td></tr>
+    <tr><td>&lt;hr&gt;</td><td>&lt;sup&gt;</td></tr>
+    <tr><td>&lt;section&gt;</td><td>&lt;mark&gt;</td></tr>
+  </table>
+
+  <p><a href="#top">[Back to Top]</a></p>
+
+</body>
+</html>
