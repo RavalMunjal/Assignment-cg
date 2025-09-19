@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media libraby</title>
+</head>
+<body>
+
+  <!-- Main Heading -->
+  <h1>Media Library Collection</h1>
+  <p>This page contains my favorite images, songs, videos, and online embeds.</p>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#images">Images</a> | 
+    <a href="#audio">Audio</a> | 
+    <a href="#video">Video</a> | 
+    <a href="#embeds">Embeds</a>
+  </nav>
+  <hr>
+
+
+  <section id="images">
+    <h2>Image Gallery</h2>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/sample.jpg" 
+           alt="Cloudinary sample" title="Sample Image 1" width="400" height="250">
+      <figcaption>Sample Cloudinary Image</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/park.jpg" 
+           alt="Park image" title="Nature Park" width="400" height="250">
+      <figcaption>Beautiful Park</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/lake.jpg" 
+           alt="Lake image" title="Lake view" width="400" height="250">
+      <figcaption>Peaceful Lake</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/mountain.jpg" 
+           alt="Mountain image" title="Mountain Range" width="400" height="250">
+      <figcaption>Snowy Mountains</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/beach.jpg" 
+           alt="Beach image" title="Beach" width="400" height="250">
+      <figcaption>Sunny Beach</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_250,c_fill/city.jpg" 
+           alt="City skyline" title="City" width="400" height="250">
+      <figcaption>City Skyline</figcaption>
+    </figure>
+  </section>
+  <hr>
+
+  <section id="audio">
+    <h2>Audio Collection</h2>
+
+    <p>Song 1 (Autoplay)</p>
+    <audio controls autoplay>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Song 2 (Loop)</p>
+    <audio controls loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Song 3 (Controls only)</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+  <hr>
+
+  <section id="video">
+    <h2>Video Collection</h2>
+
+    <figure>
+      <video controls width="480" height="270" poster="https://res.cloudinary.com/demo/image/upload/w_480,h_270,c_fill/sample.jpg">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>My coding session demo</figcaption>
+    </figure>
+
+    <figure>
+      <video controls width="480" height="270" poster="https://res.cloudinary.com/demo/image/upload/w_480,h_270,c_fill/mountain.jpg">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        <track src="https://www.w3schools.com/html/horse.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Explainer with subtitles</figcaption>
+    </figure>
+  </section>
+  <hr>
+
+  <section id="embeds">
+    <h2>External Media Embeds</h2>
+
+    <h3>YouTube Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/irqbmMNs2Bo?si=uoLR6EF2kSS-f-DR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Google Map (CodingGita Campus)</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.775!2d72.501!3d23.038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84e!2sCodingGita!5e0!3m2!1sen!2sin!4v1638355280000"
+      width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h3>Wikipedia Article</h3>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" width="560" height="315"></iframe>
+  </section>
+  <hr>
+
+
+  <footer>
+    <a href="#top">Back to Top</a>
+  </footer>
+</body>
+</html>
